@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:wght@900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -73,26 +75,27 @@
         <p class="font-2-l cor-5">Cada Bikcraft é a única e possui a sua identidade. As medias serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</p>
         <a class="link" href="./bicicletas.html">Escolha um modelo</a>
         <div class="tecnologia-vanatagens">
-        <div>
-          <img src="./css/img/icones/eletrica.svg" alt="">
-          <h3 class="font -1-m cor-0">Motor Elétrico</h3>
-          <p class="font-2-s cor-5">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
+          <div>
+            <img src="./css/img/icones/eletrica.svg" alt="">
+            <h3 class="font -1-m cor-0">Motor Elétrico</h3>
+            <p class="font-2-s cor-5">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
+          </div>
+          <div>
+            <img src="./css/img/icones/rastreador.svg" alt="">
+            <h3 class="font -1-m cor-0">Rastreador</h3>
+            <p class="font-2-s cor-5">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego..</p>
+          </div>
         </div>
-        <div>
-          <img src="./css/img/icones/rastreador.svg" alt="">
-          <h3 class="font -1-m cor-0">Rastreador</h3>
-          <p class="font-2-s cor-5">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego..</p>
-        </div>
-      </div>
       </dviv>
       <div class="tecnologia-imagem">
-      <!--Fotos no grid não se da bem no GRID. por isso tem que envolver em uma div-->
-      <img src="./css/img/fotos/tecnologia.jpg" alt="">
-    </div>
+        <!--Fotos no grid não se da bem no GRID. por isso tem que envolver em uma div-->
+        <img src="./css/img/fotos/tecnologia.jpg" alt="">
+      </div>
     </div>
   </article>
 
-  <section class="parceiros" aria-label=""><!--Se for Section, tem que ter o Aria-label, para o site criar um ponto de referencia.-->
+  <section class="parceiros" aria-label="">
+    <!--Se for Section, tem que ter o Aria-label, para o site criar um ponto de referencia.-->
     <h2 class="font-1-xxl contanier">nossos parceiros<span class="cor-p1">.</span></h2>
     <ul>
       <li><img src="./css/img/parceiros/caravan.svg" alt="caravan"></li>
@@ -104,6 +107,21 @@
       <li><img src="./css/img/parceiros/wildbeast.svg" alt="wildbeast"></li>
       <li><img src="./css/img/parceiros/surfbot.svg" alt="surfbot"></li>
     </ul>
+  </section>
+  <section class="depoimento" aria-label="Depoimento">
+    <div>
+      <img src="./css/img/fotos/depoimento.jpg" alt="Pessoa pedalando uma bicicleta Bicraft">
+    </div>
+    <div class="depoimento-conteudo">
+      <blockquote class="font-1-xl cor-o-p5">
+        <p>Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade.
+        Recomendo á todos que amo.
+        </p>
+        <span class="font-1-m-b cor-p4">Ana Júlia</span>
+        <!----uma citação no texto, e e por padrão e display:block e possui margins laterais 40px, resetar no global -->
+      </blockquote>
+    
+    </div>
   </section>
 </body>
 
