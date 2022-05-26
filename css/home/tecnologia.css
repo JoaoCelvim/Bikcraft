@@ -20,7 +20,7 @@
 }
 
 .tecnologia-conteudo > span {
-  /* > para estilizar apenas esse elemento de uma classe, caso tenha outro no conteudo ele se aplicara apenas nesse span //// só irá pegr a margim se o os elementos inline estiver como display block*/
+  /* > para estilizar apenas esse elemento de uma classe, caso tenha outro no conteudo ele se aplicara apenas nesse span //// só irá pegar a margim se o os elementos inline estiver como display block*/
   display: block;
   margin-bottom: 20px;
 }

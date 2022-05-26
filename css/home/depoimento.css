@@ -25,7 +25,7 @@
 }
 .depoimento p::before {
   content: "“";
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--cor-p2);
   position: absolute;
   top: -20px;

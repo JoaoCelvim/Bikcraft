@@ -1,0 +1,62 @@
+.seguros-bg {
+  background-color: var(--cor-11);
+}
+.seguros {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.seguros h2 {
+  grid-column: 1/-1;
+}
+.seguros-item {
+  background-color: var(--cor-12);
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.seguros-item h3 {
+  margin-bottom: 40px;
+}
+.seguros-item span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+
+.seguros-item ul {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+
+}
+.seguros-item li{ /* para alinhar ao centro o itens, usa o display flex e aligns-itens:cemter */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.seguros-item li + li {
+  /* LI +LI= Propriedade para colocar margim ou pagding apartir do senundo LI.. O PRIMEIRO LI NÃO RECEBERA A MARGIN OU PADING.. ASSIM NÃO PERDE A MAGTIN DO H1,H2,H3 */
+  margin-top: 20px;
+  
+}
+.seguros-item a {
+  grid-column: 1/-1;
+}
+/* Por padrão todo elemento grid expande o maximo que conseguir! no caso do botão, DE UMA FORMA SIMPLES PARA INFORMAR QUE O BOTÃO TENHA O SEU TAMANHO NORMAL. USE A PROPRIEDADE MAX-WIDTH: MAX-CONTENT */
+.seguros-item li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  left: -21px;
+  background-image: url(../../css/img/icones/lista.svg);
+}
+@media (max-width:800px){
+  .seguros{
+    grid-template-columns: 1fr;
+  }
+}
